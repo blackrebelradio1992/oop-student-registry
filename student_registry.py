@@ -1,5 +1,5 @@
 class Student:
-    def __init__(self, name="N/A", age=int(13), grade="12th"):
+    def __init__(self, name="N/A", age=13, grade="12th"):
         self._name = name
         self._age = age
         self._grade = grade
@@ -27,10 +27,8 @@ class Student:
     def set_age(self, new_age):
         if (type(new_age) == int and new_age > 10 and new_age < 18): #new age must be and intiger & must be greater than 11 and lower than 18
             self._age = new_age
-        else:
-            return self._age == 13
-
-
+        # else:
+        #     return self._age 
 
     @property
     def get_grade(self):
